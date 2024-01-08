@@ -1,0 +1,132 @@
+.GetConnectedSection {
+  padding: 60px 80px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.GetConnectedHeader {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #e67e22;
+  margin-bottom: 30px;
+}
+
+.GetConnectedheaderLine {
+  width: 80px;
+  opacity: 100%;
+}
+
+.GetConnectedheaderText {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 3.6px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #e67e22;
+}
+
+.emailicon {
+  height: 40px;
+  width: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.emaiSvgIcon {
+  border-radius: 100px;
+  border: 1px solid var(--Black-Primary, #121212);
+  background: #fff;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  margin-left: 15%;
+}
+
+.underline {
+  width: 100%;
+  height: 1px;
+  background: #121212;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.iconBox {
+  position: relative;
+}
+
+.iconboxEmail {
+  margin: 30px 0px;
+  padding-left: 30px;
+  color: var(--Black-Primary, #121212);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  min-height: 146px;
+  display: flex;
+  align-items: center;
+}
+.iconboxText {
+  margin: 30px 0px;
+  padding-left: 30px;
+  color: var(--Black-Primary, #121212);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  min-height: 146px;
+  display: flex;
+  align-items: center;
+}
+
+.iconItems {
+  border-bottom: 1px solid #121212;
+  height: 100%;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .GetConnectedSection {
+    padding: 45px 47.5px;
+  }
+
+  .iconItemsCol {
+    margin-bottom: 20px;
+  }
+
+  .iconboxText {
+    margin: 30px 0px;
+    letter-spacing: 3.2px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .GetConnectedSection {
+    padding: 30px 15px;
+  }
+
+  .iconItemsCol {
+    margin-bottom: 20px;
+  }
+
+  .iconboxText {
+    margin: 70px 0px;
+    letter-spacing: 3.2px;
+    min-height: auto;
+  }
+  .GetConnectedheaderLine {
+    width: 40px;
+  }
+  .GetConnectedheaderText {
+    letter-spacing: 1.8px;
+  }
+}

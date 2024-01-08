@@ -1,0 +1,260 @@
+.HeroBannerSection {
+  padding: 60px 80px;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.homeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.HerobreadcrumbsDiv {
+  display: flex;
+  column-gap: 30px;
+  color: var(--Grey, #808080);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.8px;
+}
+
+.HerobreadcrumbsDiv span a {
+  color: var(--Grey, #808080);
+}
+
+.heroBannerDiv {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+
+.heroHeader {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.heroHeaderh1 {
+  color: var(--Black-Primary, #121212);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+}
+
+.heroSubText {
+  color: var(--Button, #2f80ed);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 74px;
+}
+
+.heroParagraph {
+  color: var(--Black-Primary, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.websiteUrlText {
+  position: relative;
+  color: var(--Black-Primary, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0px;
+  text-decoration: none; /* Remove default underline */
+}
+
+.websiteUrlText::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Initially no width */
+  height: 2px;
+  background-color: #2f80ed;
+  transition: width 0.5s ease-in-out; /* Transition width property */
+}
+
+.websiteUrlText:hover::before {
+  width: 100%; /* Expand the width to 100% on hover */
+}
+.IdenbridImage {
+  /* padding: 42px 57px; */
+  width: 516px;
+  height: 556px;
+}
+
+.IdenbridlogoImage {
+  width: 100%;
+  height: auto;
+}
+
+.exploreBtn {
+  display: grid;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  font-style: normal;
+  color: #121212;
+  cursor: pointer;
+}
+
+.ovalAnimation {
+  position: relative;
+  width: 30px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #121212;
+  margin: auto;
+}
+
+/* .ball {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 2px;
+  background-color: #080808;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    height: 2px;
+    bottom: 1px;
+    border-radius: 50%;
+  }
+
+  100% {
+    bottom: 10px;
+    border-radius: 20px;
+    height: 10px;
+  }
+} */
+
+.ball {
+  position: absolute;
+  bottom: 0px;
+  left: 46%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 2px;
+  background-color: #121212;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+  0% {
+    height: 2px;
+    bottom: 1px;
+    border-radius: 50%;
+    transform: scale(1);
+  }
+  100% {
+    bottom: 10px;
+    border-radius: 20px;
+    height: 10px;
+    transform: scale(1.2);
+  }
+}
+@media (min-width: 1440px) {
+  .HeroBannerSection {
+    max-width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .HeroBannerSection {
+    padding: 60px 45px 47.5px;
+  }
+
+  .IdenbridImage {
+    /* padding: 38px 40px 0px 0px; */
+    height: auto;
+  }
+
+  .exploreBtn {
+    bottom: 20px;
+  }
+
+  .heroHeaderh1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .heroSubText {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .heroHeader {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .HeroBannerSection {
+    padding: 60px 15px 30px 15px;
+  }
+
+  .heroBannerDiv {
+    flex-direction: column;
+  }
+
+  .IdenbridImage {
+    display: none;
+  }
+
+  .exploreBtn {
+    display: none;
+  }
+
+  .heroHeader {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .heroHeaderh1 {
+    font-size: 26px;
+    display: inline;
+    margin-right: 8px;
+    /* line-height: 39px; */
+    line-height: normal;
+  }
+
+  .heroSubText {
+    font-size: 26px;
+    display: inline;
+    /* line-height: 39px; */
+    line-height: normal;
+  }
+
+  .heroParagraph {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

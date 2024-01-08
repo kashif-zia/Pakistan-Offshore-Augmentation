@@ -1,0 +1,131 @@
+.designSection {
+  padding: 60px 80px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.designHeader {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #e67e22;
+  margin-bottom: 30px;
+}
+
+.designheaderLine {
+  width: 80px;
+  opacity: 100%;
+}
+
+.designheaderText {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 3.6px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #e67e22;
+}
+
+.designh2 {
+  margin-bottom: 30px;
+}
+
+.designHeading {
+  color: var(--Black-Primary, #121212);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.designBlueHeading {
+  color: var(--Button, #2f80ed);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.designText {
+  color: var(--Black-Primary, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.designImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (min-width: 1440px) {
+  .designSection {
+    max-width: 1600px;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .designSection {
+    padding: 45px 47.5px;
+  }
+
+  .designHeading {
+    font-size: 26px;
+    display: inline;
+  }
+
+  .designBlueHeading {
+    font-size: 26px;
+  }
+
+  .designh2 {
+    margin-bottom: 20px;
+  }
+
+  .designText {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .designSection {
+    padding: 30px 15px;
+  }
+
+  .designheaderText {
+    letter-spacing: 1.8px;
+  }
+
+  .designHeading {
+    font-size: 26px;
+    display: inline;
+    line-height: 39px; /* 150% */
+  }
+
+  .designBlueHeading {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .designh2 {
+    margin-bottom: 20px;
+  }
+
+  .designText {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .designImage {
+    margin-bottom: 20px;
+  }
+  .designheaderLine {
+    width: 40px;
+  }
+}

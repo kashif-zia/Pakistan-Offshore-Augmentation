@@ -1,0 +1,32 @@
+.brandContainer {
+  background-color: rgba(238, 238, 238, 1);
+  padding: 0;
+}
+.brandSection {
+  padding: 60px 80px;
+  max-width: 1440px;
+  margin: auto !important;
+}
+
+.logo {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+@media (min-width: 1440px) {
+  .brandSection {
+    max-width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .brandSection {
+    padding: 45px 47.5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .brandSection {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+}

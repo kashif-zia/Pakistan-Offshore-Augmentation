@@ -1,0 +1,239 @@
+.FeedbackSection {
+  padding: 60px 80px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.feedbackHeader {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #e67e22;
+  margin-bottom: 30px;
+}
+
+.feedbackheaderLine {
+  width: 80px;
+  opacity: 100%;
+}
+
+.feedbackheaderText {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 3.6px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #e67e22;
+}
+
+.feedbackh2 {
+  color: var(--Black-Primary, #121212);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.blueText {
+  color: var(--Button, #2f80ed);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.vectoricon {
+  width: 95px;
+  height: 56px;
+}
+
+.feedbacktext {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--Black-Primary, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+.designation {
+  color: var(--Black-Primary, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 9px;
+}
+
+.layer {
+  color: var(--Black-Primary, #121212);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.consultationText {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.consultationCol {
+  padding: 60px 0px 0px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.feedbackdiv {
+  padding-bottom: 60px;
+}
+
+.consultationBtn {
+  position: relative;
+  width: 140px;
+  margin: auto;
+}
+
+.consultationLink {
+  z-index: 2;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.consultationButton:hover {
+  color: #fff;
+}
+
+.consultationButton {
+  display: flex;
+  width: 140px;
+  height: 48px;
+  padding: 10px 30px;
+  justify-content: center;
+  background: #fff;
+  color: #121212;
+  box-shadow:
+    3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    -3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    0px -3px 4px 0px rgba(0, 0, 0, 0.04);
+  transition: color 0.3s ease-in-out;
+}
+
+.HoverLayer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 140px;
+  margin: auto;
+  background: #121212;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.consultationButton:hover .HoverLayer {
+  top: 0;
+  height: 100%;
+}
+@media (min-width: 1440px) {
+  .FeedbackSection {
+    max-width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .FeedbackSection {
+    padding: 45px 47.5px;
+  }
+
+  .blueText {
+    font-size: 26px;
+    margin-right: 8px;
+    line-height: 38px;
+  }
+
+  .feedbackh2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 38px;
+  }
+
+  .consultationCol {
+    padding: 30px 15px;
+  }
+
+  .feedbacktext {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .GetConnectedSection {
+    padding: 30px 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .FeedbackSection {
+    padding: 30px 15px;
+  }
+
+  .blueText {
+    font-size: 26px;
+    line-height: 39px; /* 150% */
+    margin-right: 8px;
+  }
+
+  .feedbackh2 {
+    font-size: 26px;
+    line-height: 39px; /* 150% */
+    margin-bottom: 20px;
+  }
+
+  .consultationCol {
+    padding: 30px 15px;
+  }
+
+  .feedbacktext {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px; /* 175% */
+  }
+
+  .GetConnectedSection {
+    padding: 30px 15px;
+  }
+  .feedbackheaderText {
+    letter-spacing: 1.8px;
+  }
+  .consultationText {
+    font-size: 26px;
+    line-height: 39px; /* 150% */
+    margin-bottom: 30px;
+  }
+  .feedbackheaderLine {
+    width: 40px;
+  }
+  .feedbackdiv {
+    padding-bottom: 30px;
+  }
+}

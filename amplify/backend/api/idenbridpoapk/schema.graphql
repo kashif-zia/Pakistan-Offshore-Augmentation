@@ -1,0 +1,28 @@
+type POAPKInquiry
+  @model
+  @auth(rules: [{ allow: public, operations: [create, read] }]) {
+  id: ID!
+  # services: Service!
+  budget: String
+  # engagement: String!
+  # teamStrength: String!
+  name: String
+  companyName: String!
+  email: String!
+  projectDetails: String
+  createdAt: AWSDateTime
+}
+
+# type Service {
+#   research: Boolean
+#   strategy: Boolean
+#   test: Boolean
+#   launch: Boolean
+#   ui_ux_audit: Boolean
+#   design: Boolean
+#   design_system: Boolean
+#   devops: Boolean
+#   development: Boolean
+#   ideation: Boolean
+#   other: Boolean
+# }

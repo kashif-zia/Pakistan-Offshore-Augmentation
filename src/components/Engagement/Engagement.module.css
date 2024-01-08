@@ -1,0 +1,223 @@
+.engagementSection {
+  padding: 60px 80px;
+  display: grid;
+  gap: 60px;
+  max-width: 1440px;
+  margin: auto !important;
+}
+
+.engagementHeader {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: rgba(230, 126, 34, 1);
+}
+
+.headerLine {
+  width: 80px;
+  opacity: 100%;
+}
+
+.headerText {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.headerSection {
+  display: grid;
+  gap: 30px;
+}
+
+.header {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  margin: 0;
+}
+
+.subHeader {
+  font-weight: 700;
+  color: rgba(47, 128, 237, 1);
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.cardSection {
+  display: flex;
+  gap: 15px;
+}
+.serviceCard {
+  display: grid;
+  padding: 30px;
+  gap: 30px;
+}
+
+.serviceHeader {
+  color: #121212;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.serviceDescription {
+  color: #121212;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.projectCard {
+  display: grid;
+  padding: 30px;
+  gap: 30px;
+}
+
+.layer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #121212;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.consultUsLink {
+  position: relative;
+  white-space: nowrap;
+  width: 156px;
+  padding: 15px 30px 15px 30px;
+  box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.consultUsLink:hover {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+.consultUsLink:hover .defaultText {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.consultUsLink:hover .changeText {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.consultUsLink:hover .layer {
+  top: 0;
+  height: 100%;
+}
+
+.consultUs {
+  z-index: 2;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0em;
+  display: flex;
+  justify-content: center;
+}
+
+.defaultText {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.changeText {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardDivider {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .engagementSection {
+    padding: 45px 47.5px;
+  }
+  .headerLine {
+    width: 60px;
+  }
+  .headerText {
+    letter-spacing: 0.15em;
+  }
+
+  .header {
+    font-size: 31px;
+  }
+
+  .serviceCard {
+    padding: 15px;
+  }
+
+  .projectCard {
+    padding: 15px;
+  }
+
+  .serviceDescription {
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .engagementSection {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+  .headerLine {
+    width: 40px;
+  }
+
+  .headerText {
+    letter-spacing: 0.1em;
+  }
+
+  .header {
+    font-size: 26px;
+    letter-spacing: 1.3px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .cardSection {
+    display: grid;
+    gap: 30px;
+  }
+  .serviceCard {
+    padding: 0;
+  }
+
+  .projectCard {
+    padding: 0;
+  }
+  .cardDivider {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0)) 1;
+    margin: 0;
+  }
+  .serviceDescription {
+    font-size: 16px;
+  }
+}

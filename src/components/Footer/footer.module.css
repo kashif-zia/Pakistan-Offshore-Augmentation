@@ -1,0 +1,52 @@
+.scrolLink {
+  cursor: pointer;
+}
+.addressContainer {
+  display: grid;
+  gap: 30px;
+  height: 100%;
+}
+.addressContainer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 1.6px;
+  margin: 0;
+  color: #121212;
+}
+.mailSection {
+  display: grid;
+  gap: 20px;
+}
+.mail {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #121212;
+}
+
+.addressSection {
+  display: grid;
+  gap: 20px;
+}
+
+.addressCard {
+  display: flex;
+  gap: 20px;
+}
+
+.lineHeight {
+  line-height: 24px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .mailSection {
+    gap: 10px;
+  }
+
+  /* .addressContainer p {
+    line-height: 26px;
+  } */
+}

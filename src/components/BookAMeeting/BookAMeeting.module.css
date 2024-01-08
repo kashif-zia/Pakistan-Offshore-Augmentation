@@ -1,0 +1,212 @@
+/* Modal css */
+.BookMeetingheader {
+  width: 100%;
+  max-width: 734px;
+  margin-bottom: 30px;
+}
+.BookMeetingModalHeader {
+  padding: 24px 80px;
+
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BookMeetingModalHeader .btn-close {
+  opacity: 1;
+}
+
+.BookMeetingModal {
+  background-image: url('/assets/images/bgBookMeeting.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  --bs-modal-bg: inherit;
+  z-index: 100001;
+}
+.customContainer {
+  width: 1440px;
+  margin: 0px auto;
+  padding: 0;
+}
+.BookMeetingModalBody {
+  padding: 60px 80px 60px 80px;
+}
+.BookMeetingH2 {
+  margin-bottom: 30px;
+}
+.BookMeetingdark {
+  color: var(--Black-Primary, #121212);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+  display: block;
+}
+.BookMeetingblue {
+  color: var(--Button, #2f80ed);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 74px;
+  display: block;
+}
+.BookMeetintext {
+  color: var(--Black-Primary, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.expertItem {
+  position: relative;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+}
+.expertItem:hover {
+  filter: none;
+}
+.expertItemheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expertItemImage {
+  width: 100%;
+  height: auto;
+}
+.expertItemheader {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 30px;
+}
+.expertItemName {
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.expertItemdesignation {
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.expertConsultBtn {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  max-width: 150px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.5s ease-in-out;
+}
+.expertConsultBtn:hover {
+  color: #121212;
+  /* color: #333; */
+}
+
+.modallayer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.expertConsultBtn:hover .modallayer {
+  top: 0;
+  height: 100%;
+}
+
+.expertConsultText {
+  z-index: 2;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  /* line-height: 28px; */
+  line-height: normal;
+  text-align: center;
+  /* transition: all 0.3s ease-in-out; */
+}
+.idenbridLogo {
+  width: 166px;
+  height: 50px;
+}
+
+.scrolLink {
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .BookMeetingModalBody {
+    padding: 20px 80px;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .header {
+    padding: 24px 47px;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .BookMeetingModalBody {
+    padding: 60px 15px 30px 15px;
+  }
+  .expertItemheader {
+    padding: 15px;
+  }
+  .expertItemName {
+    font-size: 16px;
+  }
+  .expertConsultBtn {
+    max-width: 90px;
+  }
+  .expertConsultText {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .idenbridLogo {
+    width: 133px;
+    height: 40px;
+  }
+
+  .modal-fullscreen {
+    width: 100%;
+  }
+  .BookMeetingModalHeader {
+    padding: 24px 15px;
+  }
+  .BookMeetingModalBody {
+    padding: 60px 15px 30px 15px;
+  }
+  .BookMeetingdark {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .BookMeetingblue {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .BookMeetintext {
+    font-size: 16px;
+  }
+  .expertItem {
+    margin-bottom: 20px;
+    filter: none;
+  }
+  .closeIcon {
+    width: 25px;
+    height: 20px;
+  }
+}

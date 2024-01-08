@@ -1,0 +1,163 @@
+.ProcessSection {
+  /* padding: 60px 127px 60px 80px; */
+  background-image: url('/assets/images/bg-process.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 60px 0px;
+}
+.customContainer {
+  padding: 60px 80px;
+  max-width: 1440px;
+  margin: auto;
+}
+.processHeader {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.processheaderLine {
+  width: 80px;
+  opacity: 100%;
+}
+
+.processheaderText {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 3.6px;
+  line-height: normal;
+  /* line-height: 27px; */
+  text-transform: uppercase;
+  font-style: normal;
+  color: #fff;
+}
+
+.processh2 {
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.whiteText {
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+.processListCol {
+  display: flex;
+}
+.processList:nth-child(1) {
+  padding-left: 0px;
+}
+.processList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+  width: 100%;
+  /* max-width: 274px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 431px;
+  flex-wrap: wrap;
+}
+
+.processList li {
+  width: auto;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 274px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.processList li:before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  display: inline;
+  background: #fff;
+}
+
+.processtext {
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+@media (min-width: 1440px) {
+  .customContainer {
+    max-width: 1600px;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .ProcessSection {
+    margin: 0px;
+  }
+  .customContainer {
+    padding: 45px 47.5px;
+  }
+
+  .processh2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 38px;
+  }
+
+  .whiteText {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .processtext {
+    line-height: 28px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .customContainer {
+    padding: 30px 15px;
+  }
+
+  .processh2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 39px; /* 150% */
+  }
+
+  .whiteText {
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 39px; /* 150% */
+  }
+
+  .processtext {
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .processListCol {
+    margin-top: 20px;
+  }
+
+  .processheaderLine {
+    width: 40px;
+  }
+  .processheaderText {
+    letter-spacing: 1.8px;
+  }
+}

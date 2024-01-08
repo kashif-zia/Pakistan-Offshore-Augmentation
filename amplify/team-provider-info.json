@@ -1,0 +1,27 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyd11eb7cf1b134-staging-94904-authRole",
+      "UnauthRoleArn": "arn:aws:iam::812096089383:role/amplify-amplifyd11eb7cf1b134-staging-94904-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::812096089383:role/amplify-amplifyd11eb7cf1b134-staging-94904-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-amplifyd11eb7cf1b134-staging-94904-deployment",
+      "UnauthRoleName": "amplify-amplifyd11eb7cf1b134-staging-94904-unauthRole",
+      "StackName": "amplify-amplifyd11eb7cf1b134-staging-94904",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:812096089383:stack/amplify-amplifyd11eb7cf1b134-staging-94904/0799e780-90f8-11ee-ad67-0e0a6af253d9",
+      "AmplifyAppId": "dmeq51s22txz1"
+    },
+    "categories": {
+      "function": {
+        "POAPKSendEmail": {
+          "email": "ahmadzahid.idenbrid@gmail.com",
+          "deploymentBucketName": "amplify-amplifyd11eb7cf1b134-staging-94904-deployment",
+          "s3Key": "amplify-builds/POAPKSendEmail-553462694f476b394c33-build.zip"
+        }
+      },
+      "api": {
+        "idenbridpoapk": {}
+      }
+    }
+  }
+}

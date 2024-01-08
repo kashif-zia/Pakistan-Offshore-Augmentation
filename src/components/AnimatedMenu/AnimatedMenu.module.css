@@ -1,0 +1,372 @@
+.hamburger-menu {
+  height: 48px;
+}
+.hamburger-menu,
+.sideMenuWrapper.open {
+  display: block;
+}
+
+.containerWrapper {
+  margin: auto;
+  max-width: 1440px;
+  padding: 0;
+}
+
+.bgImage {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: url('/assets/images/hero_background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.modalBody {
+  padding: 120px 80px;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.sideMenuWrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: white;
+  opacity: 0;
+  -webkit-clip-path: circle(0% at calc(100% - 80px) 24px);
+  clip-path: circle(0% at calc(100% - 80px) 24px);
+  transition: 1s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+
+  /* overflow-y: auto;  */
+}
+
+.sideMenuWrapper.open {
+  opacity: 1;
+  z-index: 9999;
+  -webkit-clip-path: circle(140% at calc(100% - 80px) 24px);
+  clip-path: circle(140% at calc(100% - 80px) 24px);
+}
+
+.sideMenu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /* right: 0; */
+  top: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* transition: all 0.2s ease-in-out 0.4s; */
+  /* overflow-y: auto;  */
+}
+
+.sideMenu.open {
+  width: 100%;
+  height: 100%;
+  top: 98px;
+  bottom: 0;
+  opacity: 1;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.overflowAuto {
+  /* overflow: scroll !important; */
+  height: 100%;
+  z-index: 99999;
+}
+@media (min-width: 1440px) {
+  .containerWrapper {
+    max-width: 1600px;
+  }
+  .modalBody {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sidebar-contact-btn {
+    width: 200px;
+  }
+}
+
+.circle-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+  height: 100%;
+
+  animation: appearFromBottomRight 2s ease-in-out;
+  color: white;
+  z-index: 1000;
+}
+
+.circle {
+  bottom: 0;
+  right: 0;
+  width: 100vw; /* 100% of viewport width */
+  height: 100vh; /* 100% of viewport height */
+
+  background: linear-gradient(180deg, #102f9e 0%, #4800a5 100%);
+  border-radius: 50%;
+  animation: growCircle 2s ease-in-out;
+}
+
+@keyframes appearFromBottomRight {
+  from {
+    transform: translate(100%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes growCircle {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animationHeader {
+  padding: 24px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerSection {
+  display: grid;
+  gap: 60px;
+  width: calc(50% - 30px);
+  margin-bottom: auto;
+}
+
+.headerSection p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  margin: 0;
+  color: #121212;
+}
+.lineHeight {
+  line-height: 24px !important;
+}
+
+.LinkSection {
+  width: calc(50% - 30px);
+  display: grid;
+  margin-bottom: auto;
+}
+.mailSection {
+  display: grid;
+  gap: 10px;
+}
+
+.mail {
+  color: #121212;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.addressSection {
+  display: grid;
+  gap: 30px;
+}
+
+.addressCard {
+  display: flex;
+  gap: 20px;
+}
+
+.mainNavItems {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  margin-bottom: 0;
+  gap: 60px;
+}
+
+.mainNavItems li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mainNavItems li p {
+  color: #808080;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainNavItems li a {
+  color: #121212;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: normal;
+}
+/* .mainNavItems li a::before {
+  content: '';
+  background-color: #121212;
+  height: 1px;
+  width: 20px;
+  display: inline-block;
+  margin: 10px;
+} */
+.mainNavItems li hr {
+  background-color: #121212;
+  width: 20px;
+  opacity: 1;
+  border-style: solid;
+  border-image: linear-gradient(to right, #000, #000) 1 100%;
+  border-width: 1px;
+}
+
+.navLink {
+  margin: 10px 30px;
+  z-index: 2;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+.layer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #121212;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.navItem:hover .layer {
+  top: 0;
+  height: 100%;
+}
+
+.navItem {
+  position: relative;
+
+  transition: color 0.3s ease-in-out;
+  /* box-shadow:
+    3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    -3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    0px -3px 4px 0px rgba(0, 0, 0, 0.04); */
+
+  width: 140px;
+  height: 48px;
+}
+
+.navItem:hover {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+.cardDivider {
+  opacity: 0.6;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.scrolLink {
+  cursor: pointer;
+
+  color: #121212;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  .sideMenu.open {
+    padding-bottom: 120px;
+  }
+  .mainNavItems li a {
+    font-size: 24px;
+  }
+  .scrolLink {
+    font-size: 24px;
+  }
+  .mainNavItems {
+    gap: 20px;
+  }
+  .animationHeader {
+    padding: 24px 15px;
+  }
+  .idenbridLogo {
+    width: 133px;
+    height: 40px;
+  }
+  .closeIcon {
+    width: 25px;
+    height: 20px;
+  }
+  .modalBody {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 0;
+    /* height: 100%; */
+  }
+  .LinkSection {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    width: 100%;
+    justify-content: center;
+
+    padding: 30px 15px;
+    /* margin: 0; */
+  }
+
+  .headerSection {
+    padding: 30px 15px;
+    width: 100%;
+    gap: 30px;
+  }
+  .cardDivider {
+    display: none;
+  }
+  .overflowAuto {
+    overflow-y: scroll !important;
+  }
+}

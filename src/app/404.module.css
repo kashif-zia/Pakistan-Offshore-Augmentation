@@ -1,0 +1,144 @@
+.section404 {
+  padding: 145px 80px 60px 80px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  max-width: 1440px;
+  margin: auto !important;
+}
+
+.textSection {
+  display: grid;
+  gap: 10px;
+}
+.mainHeading {
+  color: #121212;
+  font-size: 230px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 200px;
+  margin: 0px;
+}
+
+.subHeading {
+  color: #121212;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0px;
+}
+.blueText {
+  color: #2f80ed;
+  font-weight: 700;
+}
+
+.navLink {
+  margin: 10px 48px;
+  z-index: 2;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-align: center;
+  font-style: normal;
+
+  font-weight: 400;
+}
+
+.navItem {
+  color: #121212;
+  position: relative;
+  /* width: 140px; */
+  height: 48px;
+  transition: color 0.3s ease-in-out;
+  box-shadow:
+    3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    -3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    0px -3px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.navItem:hover {
+  color: white;
+}
+
+.layer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #121212;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.navItem:hover .layer {
+  top: 0;
+  height: 100%;
+}
+
+.image404 {
+  width: 100%;
+  height: auto;
+  max-height: 439px;
+}
+.linkButton {
+  display: flex;
+}
+.imageSection {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1440px) {
+  .section404 {
+    max-width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .section404 {
+    padding: 102px 47.5px 45px 47.5px;
+    column-gap: 15px;
+  }
+
+  .mainHeading {
+    font-size: 165px;
+    line-height: 145px;
+  }
+  .subHeading {
+    font-size: 27px;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section404 {
+    padding: 60px 15px 30px 15px;
+    justify-content: center;
+  }
+
+  .mainHeading {
+    font-size: 100px;
+    line-height: 90px; /* 90% */
+  }
+
+  .subHeading {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .navLink {
+    margin: 10px 30px;
+  }
+  .imageSection {
+    display: none;
+  }
+  .textSection {
+    justify-content: center;
+    text-align: center;
+  }
+  .linkButton {
+    justify-content: center;
+  }
+}

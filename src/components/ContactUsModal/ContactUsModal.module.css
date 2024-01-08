@@ -1,0 +1,53 @@
+/* .modalHeader {
+  border: 0px;
+  padding-bottom: 0;
+} */
+
+.modalSection {
+  overflow-y: auto;
+}
+/* .fullScreenModal {g
+  z-index: 21;
+} */
+
+.modalHeader {
+  padding: 24px 80px;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.show {
+  display: block !important;
+}
+.scrolLink {
+  cursor: pointer;
+}
+/* .show .modal-dialog {
+  transform: translate(0, 0);
+  transition: transform 0.3s ease-out;
+
+} */
+
+@media (min-width: 1440px) {
+  .modalHeader {
+    max-width: 1600px;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .modalHeader {
+    padding: 24px 47.5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .modalHeader {
+    padding: 24px 15px;
+  }
+  .closeIcon {
+    width: 25px;
+    height: 20px;
+  }
+}

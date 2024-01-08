@@ -1,0 +1,159 @@
+.TheWebsiteSection {
+  padding: 60px 80px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.websiteHeader {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #e67e22;
+  margin-bottom: 30px;
+}
+
+.websiteheaderLine {
+  width: 80px;
+  opacity: 100%;
+}
+
+.websiteheaderText {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  line-height: normal;
+  /* line-height: 27px; */
+  text-transform: uppercase;
+  color: #e67e22;
+  margin: 0;
+}
+
+.theWebsiteh2 {
+  color: var(--Black-Primary, #121212);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.theWebsiteh2 span {
+  color: var(--Button, #2f80ed);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+.blueText {
+  color: var(--Button, #2f80ed);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.theWebsiteText {
+  color: var(--Black-Primary, #121212);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+
+.theWebsiteImage {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.blurred-image {
+  filter: blur(3px) grayscale(100%);
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.normal-image {
+  filter: blur(0);
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+.theWebsiteImage img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1440px) {
+  .TheWebsiteSection {
+    max-width: 1600px;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .TheWebsiteSection {
+    padding: 45px 47.5px;
+  }
+
+  .theWebsiteh2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .theWebsiteh2 span {
+    font-size: 26px;
+  }
+  .blueText {
+    font-size: 26px;
+  }
+
+  .theWebsiteText {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .theWebsiteImage {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .TheWebsiteSection {
+    padding: 30px 15px;
+  }
+
+  .websiteheaderText {
+    letter-spacing: 1.8px;
+  }
+
+  .theWebsiteh2 {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+
+  .theWebsiteh2 span {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .blueText {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .theWebsiteText {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .theWebsiteImage {
+    margin-top: 20px;
+  }
+
+  .websiteheaderLine {
+    width: 40px;
+  }
+
+  .blurred-image {
+    filter: blur(0);
+    transform: scale(1);
+    transition: 0.4s;
+  }
+}

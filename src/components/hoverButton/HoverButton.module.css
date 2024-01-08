@@ -1,0 +1,62 @@
+.contactUsLink {
+  position: relative;
+  display: block;
+  padding: 10px 30px 10px 30px;
+  box-shadow:
+    3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    -3px 0px 4px 0px rgba(0, 0, 0, 0.04),
+    0px -3px 4px 0px rgba(0, 0, 0, 0.04);
+  width: 148px;
+  height: 48px;
+}
+
+.contactUsBtn {
+  z-index: 2;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  /* text-align: center; */
+  white-space: nowrap;
+}
+
+.contactUsLink:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.contactUsLink:hover .layer {
+  top: 0;
+  height: 100%;
+}
+
+.layer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #121212;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.defaultText {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.changeText {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.contactUsLink:hover .defaultText {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contactUsLink:hover .changeText {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}

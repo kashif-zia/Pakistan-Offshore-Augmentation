@@ -1,0 +1,26 @@
+.scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: all 0.1s ease-in-out;
+  z-index: 9999;
+  background: white;
+  box-shadow: 3px 2px 31px -10px rgba(0, 0, 0, 0.75);
+  transform: scale(0) !important;
+}
+
+.scrollButton:hover {
+  transform: scale(1.2);
+}
+
+.show {
+  transform: scale(1) !important;
+}
